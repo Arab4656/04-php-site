@@ -1,8 +1,11 @@
+<?php
+declare(strict_types=1);
+?>
     </main>
     <footer class="site-footer">
         <div class="container footer-content">
-            <p>&copy; <?= date('Y') ?> <?= htmlspecialchars($siteName, ENT_QUOTES, 'UTF-8') ?>. All rights reserved.</p>
-            <p><?= htmlspecialchars($phone, ENT_QUOTES, 'UTF-8') ?> &middot; <?= htmlspecialchars($email, ENT_QUOTES, 'UTF-8') ?></p>
+            <p>&copy; <?= e(date('Y')) ?> <?= e($siteName) ?>. All rights reserved.</p>
+            <p><?= e($phone) ?> &middot; <?= e($email) ?></p>
         </div>
     </footer>
 </body>

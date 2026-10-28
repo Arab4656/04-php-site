@@ -1,6 +1,10 @@
 <?php
+declare(strict_types=1);
+
 $pageTitle = 'Services';
 require_once __DIR__ . '/includes/config.php';
+require_once __DIR__ . '/includes/data.php';
+require_once __DIR__ . '/includes/functions.php';
 require_once __DIR__ . '/includes/header.php';
 ?>
 <section class="page-banner">
@@ -12,21 +16,9 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 <section class="section container">
     <div class="card-grid">
-        <article class="card">
-            <span class="card-icon" aria-hidden="true">01</span>
-            <h2>Product advice</h2>
-            <p>Tell us what you want to do and we will help compare devices and accessories that fit your needs.</p>
-        </article>
-        <article class="card">
-            <span class="card-icon" aria-hidden="true">02</span>
-            <h2>Device setup</h2>
-            <p>Get a hand with the basics of setting up a new device and getting familiar with its features.</p>
-        </article>
-        <article class="card">
-            <span class="card-icon" aria-hidden="true">03</span>
-            <h2>After-sales support</h2>
-            <p>Contact us with questions about your purchase and we will point you toward the right next step.</p>
-        </article>
+        <?php foreach ($services as $service): ?>
+            <?= renderServiceCard($service) ?>
+        <?php endforeach; ?>
     </div>
 </section>
 <section class="callout">

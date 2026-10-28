@@ -212,6 +212,40 @@ h3 {
     color: var(--muted);
 }
 
+.service-card h2 {
+    font-size: 1.25rem;
+}
+
+.service-card .service-price {
+    margin-top: 20px;
+    color: var(--ink);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.team-section {
+    background: #fbfcff;
+}
+
+.team-role {
+    margin: -4px 0 14px;
+    color: var(--primary) !important;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.service-detail h2 {
+    margin-bottom: 8px;
+}
+
+.service-detail .button {
+    margin-top: 22px;
+}
+
+.service-detail p + p {
+    margin-top: 16px;
+}
+
 .card-icon {
     display: inline-grid;
     width: 42px;
