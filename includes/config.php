@@ -5,6 +5,7 @@ $siteName = 'Arab Gadgets Store Ltd';
 $tagline = 'Smart technology. Friendly service.';
 $phone = '09069588272';
 $email = 'ebalupraise3@gmail.com';
+$messagesPassword = 'change-me-local-only';
 
 $navItems = [
     'Home' => 'index.php',
